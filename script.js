@@ -35,7 +35,7 @@ document.getElementById('car_container').addEventListener('click',function(e){
             alert(`You don't have enough coins, you need 20 coins to make a call.`)
             return
         } 
-        alert(`Calling ${subTitle} and ${numbers} service`)
+        alert(`Calling ${subTitle} ${numbers} service`)
       
         document.getElementById('coins_numbers').innerText = currentCoins
         const historyContainer = document.getElementById('history_container')
@@ -43,7 +43,7 @@ document.getElementById('car_container').addEventListener('click',function(e){
         const newHistory = document.createElement('div');
 
         newHistory.innerHTML = `
-         <div class="flex justify-between items-center bg-[#FAFAFA] p-4 rounded-lg">
+         <div class="flex justify-between items-center bg-[#FAFAFA] p-4 rounded-lg mb-3">
                 <div>
                     <h2 class="font-bold">${tiTle}</h2>
                     <p class="text-[5C5C5C]">${numbers}</p>
@@ -62,9 +62,12 @@ document.getElementById('car_container').addEventListener('click',function(e){
         let copyedNumber = Number(copyed)
         let copyCount = copyedNumber+=1
         const parentNodeFind = copyBtn.parentNode.parentNode; 
+        const servicenumBers = parentNodeFind.children[2].children[0].innerText
+        console.log(servicenumBers)
        const numbers = parentNodeFind.querySelector('.numbers h2').innerText; 
         navigator.clipboard.writeText(numbers);
         document.getElementById('copy_numbers').innerText = copyCount
+        alert(`Coped Service Numbe ${servicenumBers}`)        
     }
 
     
