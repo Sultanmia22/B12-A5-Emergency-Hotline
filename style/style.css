@@ -1,0 +1,16 @@
+ body{
+            font-family: "Hind Madurai", sans-serif;
+         }
+         button{
+            cursor: pointer;
+         }
+
+         .copy_btn i, .call_btn i {
+          pointer-events: none;
+        }
+        .numbers button{
+            font-weight: 400;
+        }
+        .service_title p{
+             font-family: "Roboto", sans-serif;
+        }

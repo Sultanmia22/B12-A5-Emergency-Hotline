@@ -35,7 +35,7 @@ document.getElementById('car_container').addEventListener('click',function(e){
             alert(`You don't have enough coins, you need 20 coins to make a call.`)
             return
         } 
-        alert(`Calling ${subTitle} ${numbers} service`)
+        alert(`Calling ${subTitle} Service ${numbers}`)
       
         document.getElementById('coins_numbers').innerText = currentCoins
         const historyContainer = document.getElementById('history_container')
