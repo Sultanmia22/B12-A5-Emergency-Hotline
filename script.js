@@ -32,10 +32,10 @@ document.getElementById('car_container').addEventListener('click',function(e){
         let coinNumber = Number(coins)
         let currentCoins = coinNumber - 20;
        if(coinNumber < 20){
-            alert(`You don't have enough coins, you need 20 coins to make a call.`)
+            alert(`❌You don't have enough coins, you need 20 coins to make a call.`)
             return
         } 
-        alert(`Calling ${subTitle} Service ${numbers}`)
+        alert(`📞Calling ${subTitle} Service ${numbers}`)
       
         document.getElementById('coins_numbers').innerText = currentCoins
         const historyContainer = document.getElementById('history_container')
